@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #4F7942;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_group.Controller.Login_signupController">
+   <children>
+      <HBox layoutY="320.0" prefHeight="67.0" prefWidth="500.0" style="-fx-border-color: gray; -fx-border-width: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#LoginpaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-border-radius: 5;" text="Login">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#SignuppaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-border-radius: 5;" text="Signup">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane_login" layoutY="2.0" prefHeight="324.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <TextField fx:id="txt_username" layoutX="137.0" layoutY="107.0" prefHeight="30.0" prefWidth="300.0" promptText="Enter  UserName">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="Type" layoutX="297.0" layoutY="32.0" prefWidth="150.0" promptText="Chose Type" />
+            <Button fx:id="btn_login" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_loginShow" prefHeight="46.0" prefWidth="142.0" style="-fx-border-color: Gray; -fx-border-radius: 5;" text="Login">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cancel" alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="244.0" mnemonicParsing="false" onAction="#CancelShow" prefHeight="46.0" prefWidth="141.0" style="-fx-border-color: Gray; -fx-border-radius: 5;" text="Cancel">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="65.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="69.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OIP.jpg" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="Txt_password_login" layoutX="139.0" layoutY="182.0" prefHeight="30.0" prefWidth="300.0" promptText="Enter your password">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_signup" layoutX="14.0" layoutY="2.0" prefHeight="324.0" prefWidth="500.0" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <TextField fx:id="txt_username_up" layoutX="227.0" layoutY="83.0" prefHeight="25.0" prefWidth="255.0" promptText="Enter user name">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="txt_email_up" layoutX="227.0" layoutY="126.0" prefHeight="25.0" prefWidth="255.0" promptText="Enter your Email">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="ID" layoutX="227.0" layoutY="203.0" prefHeight="25.0" prefWidth="255.0" promptText="Enter your ID">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="txt_password" layoutX="227.0" layoutY="165.0" prefHeight="26.0" prefWidth="255.0" promptText="Enter your  password">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </PasswordField>
+            <ComboBox fx:id="Type_up" layoutX="234.0" layoutY="39.0" prefHeight="26.0" prefWidth="242.0" promptText="Chose Type">
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+            <Button fx:id="btn_submit" contentDisplay="CENTER" layoutX="55.0" layoutY="257.0" mnemonicParsing="false" onAction="#SubmitShow" prefHeight="38.0" prefWidth="200.0" style="-fx-border-radius: 5; -fx-border-color: Gray;" text="Submit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="btn_exit_up" alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="258.0" mnemonicParsing="false" onAction="#ExitShow" prefHeight="38.0" prefWidth="200.0" style="-fx-border-radius: 5; -fx-border-color: Gray;" text="Exit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="164.0" layoutX="35.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@add-user-icon-6.jpg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

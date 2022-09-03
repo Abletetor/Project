@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_group.Controller.SectionController">
+   <children>
+      <ImageView fitHeight="490.0" fitWidth="607.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@acomp.jpg" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="171.0" prefHeight="53.0" prefWidth="213.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="SECTION DETAILS">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="82.0" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="SECTION ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="157.0" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="NUMBER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="238.0" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="CLASSROOM">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="323.0" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="DATE/TIME ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Txt_section_id" layoutX="347.0" layoutY="82.0" prefHeight="47.0" prefWidth="202.0" />
+      <TextField fx:id="Txt_Number" layoutX="347.0" layoutY="157.0" prefHeight="47.0" prefWidth="202.0" />
+      <TextField fx:id="Txt_classroom" layoutX="347.0" layoutY="238.0" prefHeight="47.0" prefWidth="202.0" />
+      <TextField fx:id="Txt_Day_time" layoutX="347.0" layoutY="323.0" prefHeight="47.0" prefWidth="202.0" />
+      <Button fx:id="btn_exit" layoutX="147.0" layoutY="410.0" mnemonicParsing="false" onAction="#ExitShow" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="EXIT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="327.0" layoutY="410.0" mnemonicParsing="false" onAction="#submit" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="SUBMIT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_menu" layoutX="487.0" layoutY="7.0" mnemonicParsing="false" onAction="#out" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="MAIN MENU">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

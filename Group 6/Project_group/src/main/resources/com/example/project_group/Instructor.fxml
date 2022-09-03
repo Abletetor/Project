@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_group.Controller.InstructorController">
+   <children>
+      <ImageView fitHeight="513.0" fitWidth="609.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@cbg.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" layoutY="-3.0" prefHeight="45.0" prefWidth="268.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="INSTRUCTOR DETAILS">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="108.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="FIRSTNAME">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="187.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="LASTNAME">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="261.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="57.0" layoutY="334.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: GREY; -fx-text-fill: WHITE;" text="EMAIL ADDRESS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstname" layoutX="320.0" layoutY="108.0" prefHeight="45.0" prefWidth="206.0" promptText="Enter your first name here!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastname" layoutX="320.0" layoutY="187.0" prefHeight="45.0" prefWidth="206.0" promptText="Enter your last name here!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Inst_id" layoutX="320.0" layoutY="261.0" prefHeight="45.0" prefWidth="206.0" promptText="Enter your ID number here!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Email" layoutX="320.0" layoutY="334.0" prefHeight="45.0" prefWidth="206.0" promptText="Enter your email address here!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_Exit" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="408.0" mnemonicParsing="false" onAction="#Exit" prefHeight="45.0" prefWidth="108.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="EXIT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Submit" alignment="CENTER" contentDisplay="CENTER" layoutX="327.0" layoutY="408.0" mnemonicParsing="false" onAction="#submit" prefHeight="45.0" prefWidth="108.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="SUBMIT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Main" alignment="CENTER" contentDisplay="CENTER" layoutX="492.0" layoutY="7.0" mnemonicParsing="false" onAction="#out" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #008AE6; -fx-text-fill: WHITE;" text="MAIN MENU">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
